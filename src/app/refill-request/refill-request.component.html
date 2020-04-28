@@ -1,0 +1,93 @@
+<ion-header>
+  <ion-toolbar class="toolbar-color1">
+    <div class="header">
+      <div class="back-icon float-left">
+        <ion-back-button>
+          <ion-icon name="arrow-back-outline"></ion-icon>
+        </ion-back-button>
+      </div>
+      <ion-title class="title">Refill Request
+      </ion-title>
+      <div class="menu-icon float-right">
+        <ion-menu-button><span class="custom-icon"><img src="../../assets/images/menu-icon.png" alt=""></span>
+        </ion-menu-button>
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="sans-font form">
+        <form action="">
+        <div class="form-heading">
+          <p>Please Fill This Form</p>
+          <h4>Basic Details</h4>
+        </div>
+        <div class="form-field">
+
+          <div class="form-group ">
+            <input type="text" class="form-control" placeholder="Name">
+          </div>
+
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Phone">
+          </div>
+
+          <div class="form-group">
+            <input type="mail" class="form-control" placeholder="Email">
+          </div>
+               </div>
+                 <div class="row rx-number m-0">
+                  <label>Rx Numbers to be transfered</label>
+            <div class="col-6 p-0">
+              <input type="text" class="form-control"  placeholder="Rx">
+            </div>
+            <div class="col-6 p-0">
+              <input type="text" class="form-control"  placeholder="Rx">
+            </div>
+            <div class="col-6 p-0">
+              <input type="text" class="form-control" placeholder="Rx">
+            </div>
+            <div class="col-6 p-0">
+              <input type="text" class="form-control" placeholder="Rx">
+            </div>
+            <div class="col-6 p-0">
+              <input type="text" class="form-control" placeholder="Rx">
+            </div>
+            <div class="col-6 p-0">
+              <input type="text" class="form-control" placeholder="Rx">
+            </div>
+          </div>
+
+          <div class="form-footer">
+            <ion-item>
+              <ion-label position="floating">
+                <img src="../../assets/images/calender.png" alt="">
+                Pick Up Date
+              </ion-label>
+              <ion-datetime display-timezone="utc"></ion-datetime>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="floating">
+             <img src="../../assets/images/clock.png" alt="">
+                Pick Up Time
+              </ion-label>
+              <ion-datetime display-format="h:mm A" picker-format="h:mm A" ></ion-datetime>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="floating">
+                <img src="../../assets/images/note.png" alt="">
+                Note To Pharmacy
+              </ion-label>
+              <ion-textarea></ion-textarea>
+            </ion-item>
+           
+          </div>
+       <div class="submit-button text-center">
+        <button type="submit">Submit</button>
+       </div>
+      </form>
+     </div>
+</ion-content>

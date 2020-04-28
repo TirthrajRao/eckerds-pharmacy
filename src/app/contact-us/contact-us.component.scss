@@ -1,0 +1,139 @@
+.contact-img {
+    padding: 50px 20px;
+    background-image: url("../../assets/images/contact-cover.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(#c7c7c7, #971a5c 50%);
+        opacity: 0.64;
+    }
+}
+.contact-text {
+    position: relative;
+    z-index: 2;
+    font-family: "Source Sans Pro", sans-serif;
+    p {
+        color: #ffffff;
+        font-size: 14px;
+        position: relative;
+        padding-left: 35px;
+        margin-top: 7px;
+        img{
+            position: absolute;
+            left: 0;
+            top: 4px;
+            filter: contrast(0)brightness(200%);
+        }
+        span{
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+}
+.all-location{
+    padding: 30px 20px;
+    h4{
+        color: #AC2A37;
+    font-size: 17px;
+    font-weight: 600;
+    }
+}
+
+#accordion{
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif !important;
+}
+.accordion-group a {
+	width           : 100%;
+	padding-right: 10px !important;
+	background-color: #B872BB;
+	color           : #fff;
+	padding         : 15px;
+	position        : relative;
+    font-size       : 12px;
+    font-weight: 600;
+    line-height     : 19px;
+    display: flex;
+    text-decoration: none;
+    border-top-right-radius: 15px !important;
+    border-bottom-left-radius: 15px !important;
+}
+
+.accordion-group{
+    margin-bottom: 10px;
+border-top-right-radius: 15px;
+border-bottom-left-radius: 15px;
+/* box-shadow */
+-webkit-box-shadow: rgba(0,0,0,0.2) 0px 0 10px;
+-moz-box-shadow: rgba(0,0,0,0.2) 0 0 10px;
+box-shadow: rgba(0,0,0,0.2) 0 0 10px;
+}
+.accordion-group a:after {
+	content    : "\f078";
+	font-family: 'FontAwesome';
+}
+
+.accordion-group a[aria-expanded="true"]:after {
+	content: "\f077";
+}
+
+.accordion-group a.collapsed:after,
+.accordion-group a:after {
+	position           : absolute;
+	right              : 15px;
+	top                : 15px;
+	bottom             : 0;
+	margin             : auto;
+	color        : #fff;
+	font-size    : 14px;
+	text-align   : center;
+}
+.accordion-content .accordion-header {
+	border-bottom   : 1px solid #E2E2E2;
+	padding         : 15px;
+	background-color: #fff;
+}
+
+.accordion-content .accordion-header p {
+	margin-left: 25px;
+	position   : relative;
+	color      : #000;
+    font-size  : 14px;
+    font-weight: 500;
+}
+
+.accordion-content .accordion-header p img {
+	position: absolute;
+    left    : -30px;
+    top: 4px;
+}
+
+.accordion-content .accordion-footer {
+		padding         : 10px;
+}
+
+.accordion-content .accordion-footer ul li {
+	list-style: none;
+	font-size : 11px;
+    color     : #000;
+    font-weight: 400;
+}
+
+.accordion-content .accordion-footer ul {
+	display        : flex;
+	justify-content: space-between;
+}
+
+.accordion-content .accordion-footer ul li img {
+	margin-right: 8px;
+}

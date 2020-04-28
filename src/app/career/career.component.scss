@@ -1,0 +1,44 @@
+.single-career-position {
+    border-bottom-left-radius: 15px;
+    box-shadow: 0 5px 13px -4px rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 15px;
+}
+.all-career-position {
+    margin: 15px 0;
+}
+.career-header {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: #b86dbb;
+    padding: 20px 12px;
+    display: inline-block;
+       width: 100%;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+  
+    h6{
+        font-size: 14px;
+        font-weight: 500;
+        float: left;
+    }
+    small{
+        font-size: 12px;
+        float: right;
+    }
+   }
+.career-middle {
+    padding: 20px;
+    h5{
+        color: #AF59B2;
+        font-size: 15px;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+    }
+    p{
+        color: #5B4891;
+        font-size: 13px;
+    }
+}

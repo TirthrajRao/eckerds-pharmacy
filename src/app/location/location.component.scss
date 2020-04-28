@@ -1,0 +1,57 @@
+.all-location {
+    padding: 20px 35px;
+    position: relative;
+    overflow: hidden;
+    &:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('../../assets/images/grid.png');
+        background-repeat: repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: 1;
+    }
+}
+.all-location-detail {
+    position: relative;
+    z-index: 11;
+}
+.location-img {
+    height: 140px;
+    position: relative;
+    overflow: hidden;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(#fff, #000 77%);
+        opacity: 0.55;
+    }
+    img {
+        max-width: 100%;
+        min-width: 100%;
+        min-height: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+}
+.all-location-detail p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 11;
+    font-size: 17px;
+    font-weight: 600;
+    bottom: 25px;
+    text-align: center;
+    color: #fff;
+}

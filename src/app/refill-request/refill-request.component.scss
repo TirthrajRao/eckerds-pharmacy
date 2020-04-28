@@ -1,0 +1,42 @@
+ion-content {
+    --background: #EAEDF3 !important;
+    position: relative;
+    &:after {
+        // content: "";
+        // background-image: url('../../assets/images/grid.png');
+        // background-repeat: repeat;
+        // background-position: center;
+        // background-repeat: no-repeat;
+        // z-index: 1;
+        // position: absolute;
+        // top: 0;
+        // bottom: 0;
+        // left: 0;
+        // right: 0;
+           }
+}
+.form-heading{
+    border-bottom: 1px solid rgba(112, 112, 112, 0.24);
+    p{
+        font-size: 13px;
+        font-weight: 600;
+        color: #000;
+        padding: 15px 25px 10px;
+       position: relative;
+       &:after{
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        height: 2px;
+        width: 110px;
+        left: 25px;
+        background: #F9669B;
+              }
+    }
+    h4{
+        color: #F9669B;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 15px 25px;
+    }
+}

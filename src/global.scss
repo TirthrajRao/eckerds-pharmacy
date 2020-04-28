@@ -1,0 +1,299 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import "~@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+// common css start here
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+.sans-font {
+    font-family: "Source Sans Pro", sans-serif;
+}
+body *[routerlink] {
+    outline: none !important;
+}
+// header css start here
+ion-back-button.ios.button.in-toolbar.ion-activatable.ion-focusable.hydrated {
+color: #ffffff;
+}
+ion-back-button.ios.button.in-toolbar.ion-activatable.ion-focusable.hydrated ion-icon.ios.hydrated span{
+display: none;
+}
+ ion-header ion-toolbar:first-child {
+    --background: linear-gradient(to right, #fc95c4 40%, #fa6fa2);
+}
+ion-back-button.md.button.back-button-has-icon-only.in-toolbar.ion-activatable.ion-focusable.hydrated {
+    color: #fff;
+}
+.header-md:after {
+    background-image: unset;
+}
+.header {
+    width: 100%;
+   }
+.title {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+}
+ion-menu-button span.button-inner {
+    display: none;
+}
+// header css end here
+
+// content start here
+.top-heading {
+    background: linear-gradient(to right, #fc8ec3, #f84d83);
+    height: 160px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px 10px 0 60px;
+    color: #ffffff;
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: -28px;
+        background-image: url("./assets/images/after.png");
+        background-repeat: no-repeat;
+    }
+    h4 {
+        font-size: 20px;
+        font-weight: 600;
+        position: relative;
+        z-index: 1;
+    }
+    p {
+        font-size: 15px;
+        margin-top: 10px;
+        line-height: 20px;
+        position: relative;
+        z-index: 1;
+        color: #ffe1f1;
+    }
+}
+// for all forms
+.form-field .form-group {
+    margin: 20px;
+}
+.rx-number .form-control {
+    border-radius: 0px;
+}
+.form-control {
+    height: 49px;
+    &:focus{
+        box-shadow: none;
+        outline: none;
+    }
+}
+.rx-number label {
+    margin: 15px 22px;
+    color: #f85d94;
+    font-size: 16px;
+    font-weight: 600;
+}
+.form-footer {
+    padding: 25px;
+}
+.form-footer ion-item {
+    --background: transparent;
+    font-size: 13px;
+    font-weight: 600;
+    --padding-start: 0px;
+    --border-color: #f85d94;
+}
+.submit-button button {
+    color: #ffffff;
+    padding: 22px 30px;
+    width: 65%;
+    background: linear-gradient(to right, #fc95c4, #fa6fa2 50%);
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 600;
+}
+.form {
+    margin-bottom: 35px;
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: url('./assets/images/grid.png');
+        background-repeat: repeat;
+        z-index: 1;
+    }
+    form{
+        position: relative;
+        z-index: 2;
+    }
+}
+
+ion-label {
+    --color: #f85d94 !important;
+    img {
+        margin-right: 5px;
+    }
+}
+.item-label-stacked.sc-ion-textarea-md-h,
+.item-label-stacked .sc-ion-textarea-md-h,
+.item-label-floating.sc-ion-textarea-md-h,
+.item-label-floating .sc-ion-textarea-md-h {
+    --padding-bottom: 0px;
+    --padding-start: 0;
+    margin-top: 0px !important;
+}
+// detail page start
+.about {
+    background-image: url("./assets/images/about.png");
+}
+.franchisee {
+    background-image: url("./assets/images/franchiseeimg.png");
+}
+.career {
+    background-image: url("./assets/images/career.png");
+}
+.speciality {
+    background-image: url("./assets/images/special.png");
+}
+.cover-img {
+    height: 200px;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(#c7c7c7, #971a5c 50%);
+        opacity: 0.64;
+    }
+}
+.cover-text {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    p {
+        font-size: 13px;
+        line-height: 18px;
+        margin-bottom: 10px;
+    }
+    h4 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+.heading-text {
+    color: #ac2a37;
+    font-size: 17px;
+    font-weight: 600;
+}
+.about-text {
+    padding: 25px 20px 30px;
+    p {
+        color: rgba(109, 102, 128, 0.8);
+        font-size: 14px;
+        margin-top: 15px;
+        font-family: "Montserrat", sans-serif !important;
+    }
+}
+// content end here
+// footer start here
+.footer-md::before {
+    content: none;
+}
+ion-footer ion-toolbar:last-of-type {
+    padding: 10px 0;
+}
+.footer ul {
+    width: 100%;
+}
+.footer ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    margin-top: 54px;
+    color: #a59ca0;
+    font-size: 12px;
+    width: 20%;
+    text-align: center;
+    img {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
+.footer ul li.active {
+    color: #fa6ca2;
+}
+// footer end here
+.footer {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -3px;
+        bottom: 0;
+        right: 0;
+        background-image: url("./assets/images/footershape.png");
+        background-repeat: no-repeat;
+    }
+}
