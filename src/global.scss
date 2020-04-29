@@ -59,9 +59,7 @@ body *[routerlink] {
 ion-back-button.ios.button.in-toolbar.ion-activatable.ion-focusable.hydrated {
 color: #ffffff;
 }
-ion-back-button.ios.button.in-toolbar.ion-activatable.ion-focusable.hydrated ion-icon.ios.hydrated span{
-display: none;
-}
+
  ion-header ion-toolbar:first-child {
     --background: linear-gradient(to right, #fc95c4 40%, #fa6fa2);
 }
