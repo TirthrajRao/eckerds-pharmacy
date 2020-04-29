@@ -1,0 +1,161 @@
+.home-page {
+    position: relative;
+    height: 100%;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: url("../../assets/images/grid.png");
+        background-repeat: repeat;
+        z-index: 1;
+    }
+}
+.pharmacy-service {
+    background-color: #eaedf3;
+    padding: 15px 5px;
+    position: relative;
+    z-index: 1;
+    h4 {
+        color: #ac2a37;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 15px 10px 25px 10px;
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 70px;
+            background: #ac2a37;
+            left: 2px;
+            bottom: -13px;
+        }
+    }
+}
+.single-servics {
+    border: 2px solid #fa9ecd;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+    min-height: 122px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    img {
+        width: 50px;
+        height: 66px;
+    }
+    p {
+        font-size: 12px;
+        line-height: 16px;
+        color: #000;
+        font-weight: 600;
+    }
+}
+.pharmacy-detail {
+    background-image: url("../../assets/images/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px 15px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px 15px;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.28);
+    }
+}
+.pharmacy-text {
+    position: relative;
+    z-index: 5;
+    color: #ffffff;
+    h4 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    p {
+        font-size: 13px;
+    }
+}
+.location-img {
+    height: 130px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-bottom-right-radius: 18px;
+    border-top-left-radius: 18px;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.3);
+    }
+    img {
+        max-height: 100%;
+        min-height: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        object-fit: cover;
+    }
+   }
+.single-location{
+    position: relative;
+      display: flex;
+    align-items: center;
+    p {
+        position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 11;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    }
+}
+.location-page {
+    padding: 0px 20px;
+    position: relative;
+    z-index: 2;
+}
+.location-heading {
+    width: 100%;
+    display: inline-block;
+    h4 {
+        color: #ac2a37;
+        font-size: 18px;
+        font-weight: 600;
+        float: left;
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 70px;
+            background: #ac2a37;
+            left: 0px;
+            bottom: -10px;
+        }
+    }
+    p {
+        font-size: 12px;
+        float: right;
+        font-weight: 600;
+    }
+}

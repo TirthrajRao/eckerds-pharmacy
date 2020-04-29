@@ -15,6 +15,7 @@ import { CareerComponent } from '../career/career.component';
 import { FranchiseeComponent } from '../franchisee/franchisee.component';
 import { SpecialityCompoundingComponent } from '../speciality-compounding/speciality-compounding.component';
 import { ContactUsComponent } from '../contact-us/contact-us.component';
+import { HomePageComponent } from '../home-page/home-page.component';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import { from } from 'rxjs';
@@ -32,8 +33,12 @@ import { from } from 'rxjs';
         children: [
           {
             path: '',
-            redirectTo: 'location',
+            redirectTo: 'home-page',
             pathMatch: 'full'
+          },
+          {
+            path: 'home-page',
+            component: HomePageComponent
           },
           {
             path: 'location',
@@ -98,6 +103,7 @@ import { from } from 'rxjs';
     FranchiseeComponent,
     SpecialityCompoundingComponent,
     ContactUsComponent,
+    HomePageComponent,
     
   ]
 })

@@ -1,5 +1,18 @@
 .information {
     padding: 0 20px 10px;
+    position: relative;
+    height: 100%;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: url("../../assets/images/grid.png");
+        background-repeat: repeat;
+        z-index: 1;
+    }
    }
 .information-img {
     padding: 20px;
@@ -11,6 +24,7 @@
     position: relative;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
+    z-index: 2;
     &:after{
         content: "";
         position: absolute;
