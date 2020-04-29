@@ -25,23 +25,23 @@
 
     <div class="all-service">
 
-      <div class="single-service-detail"  routerLink='/home/location'>
-        <a class="single-service service-hover-color" href="#">
+      <div class="single-service-detail" (click)="getLocation('tranfer-prescription')">
+        <a class="single-service service-hover-color">
           <img class="service-img" src="../../assets/images/prescripsion.png" alt="prescripsion">
           <p>Transfer
             Prescription</p>
          <img class="arrow-img" src="../../assets/images/arrow.png" alt="arrow">
         </a>
       </div>
-      <div class="single-service-detail"  routerLink='/home/location'>
-        <a class="single-service service-hover-color" href="#">
+      <div class="single-service-detail" (click)="getLocation('refill-request')">
+        <a class="single-service service-hover-color">
           <img class="service-img" src="../../assets/images/refill.png" alt="refill">
           <p>Refill Request</p>
          <img class="arrow-img" src="../../assets/images/arrow.png" alt="arrow">
         </a>
       </div>
-      <div class="single-service-detail"  routerLink='/home/location'>
-        <a class="single-service service-hover-color" href="#">
+      <div class="single-service-detail" (click)="getLocation('price-check')">
+        <a class="single-service service-hover-color">
           <img class="service-img" src="../../assets/images/prise.png" alt="refill">
           <p>Price Check</p>
          <img class="arrow-img" src="../../assets/images/arrow.png" alt="arrow">
