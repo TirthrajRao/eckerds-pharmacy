@@ -36,4 +36,5 @@ export class LocationComponent implements OnInit {
       console.log("other router link")
     }
   }
+  
 }
