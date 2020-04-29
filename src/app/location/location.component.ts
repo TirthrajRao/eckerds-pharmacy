@@ -27,9 +27,14 @@ export class LocationComponent implements OnInit {
 
   getForm(data) {
     console.log(data);
-    let navigationExtras: NavigationExtras = {
-      state: data
-    };
-    this.router.navigate(['/home/' + this.details], navigationExtras);
+    if (this.details) {
+      let navigationExtras: NavigationExtras = {
+        state: data
+      };
+      this.router.navigate(['/home/' + this.details], navigationExtras);
+    } else {
+      console.log("other router link")
+    }
   }
+  
 }
