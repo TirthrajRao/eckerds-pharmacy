@@ -33,7 +33,8 @@ export class LocationComponent implements OnInit {
       };
       this.router.navigate(['/home/' + this.details], navigationExtras);
     } else {
-      console.log("other router link")
+      console.log("other router link");
+      this.router.navigate(['/home/location-detail'])
     }
   }
   
