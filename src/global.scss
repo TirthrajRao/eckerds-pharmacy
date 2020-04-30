@@ -292,10 +292,10 @@ ion-footer ion-toolbar:last-of-type {
     list-style: none;
     display: inline-block;
     position: relative;
-    margin-top: 54px;
+    margin-top: 60px;
     color: #a59ca0;
-    font-size: 12px;
-    width: 20%;
+    font-size: 11px;
+    width: 19%;
     text-align: center;
     img {
         position: absolute;
@@ -304,6 +304,9 @@ ion-footer ion-toolbar:last-of-type {
         right: 0;
         margin: auto;
     }
+}
+.footer ul li:nth-child(2) {
+    width: 24%;
 }
 .footer ul li.active {
     color: #fa6ca2;

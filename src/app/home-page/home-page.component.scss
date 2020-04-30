@@ -17,7 +17,7 @@
     background-color: #eaedf3;
     padding: 15px 5px;
     position: relative;
-    z-index: 1;
+    z-index: 2;
     h4 {
         color: #ac2a37;
         font-size: 18px;
@@ -68,7 +68,7 @@
     border-radius: 10px;
     overflow: hidden;
     margin: 20px 15px;
-    &:after {
+       &:after {
         content: "";
         position: absolute;
         top: 0;

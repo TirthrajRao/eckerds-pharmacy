@@ -30,7 +30,7 @@
   z-index: 11;
 }
 .menu-list {
-  padding: 10px 0;
+  padding: 11px 0;
 }
 .menu-list p {
   position: relative;
@@ -42,6 +42,12 @@
 }
 .menu-list p img {
   position: absolute;
-  top: 0;
+  top: 0px;
   left: -40px;
+}
+.menu-list:last-child p img{
+  top: 9px;
+}
+.menu-list:nth-child(4) p img{
+  top: -6px;
 }

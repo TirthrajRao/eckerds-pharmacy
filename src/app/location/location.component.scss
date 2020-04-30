@@ -55,3 +55,19 @@
     text-align: center;
     color: #fff;
 }
+.location-text{
+    color: #ac2a37;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 15px 25px 5px;
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 60px;
+        background: #ac2a37;
+        left: 2px;
+        bottom: -8px;
+    }
+}

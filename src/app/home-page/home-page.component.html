@@ -21,64 +21,66 @@
       <h4>Eckerds Services</h4>
       <div class="row m-0">
         <div class="col-4 p-0">
-          <div class="single-servics">
+          <div class="single-servics" routerLink='/home/location'>
             <img src="../../assets/images/prescripsion.png" alt="prescripsion">
             <p class="text-center">Transfer
               Prescripsion</p>
           </div>
         </div>
         <div class="col-4 p-0">
-          <div class="single-servics">
+          <div class="single-servics" routerLink='/home/location'>
             <img src="../../assets/images/refill.png" alt="prescripsion">
             <p class="text-center">Refill Request</p>
           </div>
         </div>
         <div class="col-4 p-0">
-          <div class="single-servics">
+          <div class="single-servics" routerLink='/home/location'>
             <img src="../../assets/images/prise.png" alt="prescripsion">
             <p class="text-center">Price Check
-              </p>
+            </p>
           </div>
         </div>
       </div>
     </div>
 
-<div class="pharmacy-detail">
-  <div class="pharmacy-text">
-    <h4>Eckerds Pharmacy is community 
-      retail pharmacy</h4>
-    <p>we based in Bradenton FL. Eckerds Pharmacy’s 
-      mission is to serve community for their 
-      prescription and other health care needs, at the
-      same time making healthcare more affordable 
-      for everyone.</p>
-  </div>
-</div>
+    <div class="pharmacy-detail" routerLink='/home/information'>
+      <div class="pharmacy-text">
+        <h4>Eckerds Pharmacy is community
+          retail pharmacy</h4>
+        <p>we based in Bradenton FL. Eckerds Pharmacy’s
+          mission is to serve community for their
+          prescription and other health care needs, at the
+          same time making healthcare more affordable
+          for everyone.</p>
+        <p>We strive for excellent customer service and hometown welcoming feel. Call or visit one of our locations for
+          more information on services we offer and to find out how we can help you with your health care needs.</p>
+      </div>
+    </div>
 
-<div class="location-page">
- <div class="location-heading">
-   <h4>Location</h4>
-   <p routerLink='/home/location'>View all </p>
-  </div>
-   <div class="row  mt-3">
-     <div class="col-6">
-       <div class="single-location">
-       <div class="location-img">
-         <img src="../../assets/images/w.jpg" alt="location">
+    <div class="location-page">
+      <div class="location-heading">
+        <h4>Location</h4>
+        <p routerLink='/home/location'>View all </p>
+      </div>
+      <div class="row  mt-3">
+        <div class="col-6">
+          <div class="single-location">
+            <div class="location-img">
+              <img src="../../assets/images/w.jpg" alt="location">
+            </div>
+            <p>Wauchula</p>
+          </div>
         </div>
-         <p>Wauchula</p>
-       </div>
-     </div>
-     <div class="col-6">
-      <div class="single-location">
-      <div class="location-img">
-        <img src="../../assets/images/palm.jpg" alt="location">
+        <div class="col-6">
+          <div class="single-location">
+            <div class="location-img">
+              <img src="../../assets/images/palm.jpg" alt="location">
+            </div>
+            <p>Palmetto</p>
+          </div>
+        </div>
       </div>
-      <p>Palmetto</p>
-      </div>
-     </div>
-   </div>
- </div>
+    </div>
   </div>
 
 
@@ -91,7 +93,7 @@
       <span class="right line"></span>
       <ul>
         <li routerLink='/home/home-page'><img src="../../assets/images/homeicon-1.png" alt="icon">Home</li>
-        <li routerLink='/home/information'><img src="../../assets/images/homeicon-2.png" alt="icon">Information</li>
+        <li routerLink='/home/information'><img src="../../assets/images/homeicon-2.png" alt="icon">Pharmacy Info</li>
         <li class="active" routerLink='/home/service'><img src="../../assets/images/rx.png" alt="icon">Services</li>
         <li routerLink='/home/career'><img src="../../assets/images/homeicon-4.png" alt="icon">Career</li>
         <li routerLink='/home/contact-us'><img src="../../assets/images/contact-icon.png" alt="icon">Contact</li>
